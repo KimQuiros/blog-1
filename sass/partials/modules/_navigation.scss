@@ -1,0 +1,11 @@
+.principal-navegation {
+	a{
+    @include font-size(12);
+    display: block;
+   	margin-left: 64px;
+    @media(min-width: 640px){
+    	
+    }
+  }
+}
+	

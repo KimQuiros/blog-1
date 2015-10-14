@@ -1,0 +1,21 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	padding: 0;
+	max-width: 2000px;
+  margin: 0 auto;
+}
+ul li a{
+	text-decoration: none;
+}
+ul li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
