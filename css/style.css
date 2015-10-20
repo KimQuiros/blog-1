@@ -33,8 +33,8 @@ audio:not([controls]) {
   display: none; }
 
 html {
-  background: white;
-  color: black;
+  background: #fff;
+  color: #000;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
@@ -221,30 +221,98 @@ ul li {
 a {
   text-decoration: none; }
 
-.principal-navegation a {
-  font-size: 12px;
-  font-size: 1.2rem;
-  display: block;
-  margin-left: 64px; }
+.container-general {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px; }
 
-.container-header .container-header-logo {
-  font-size: 32px;
-  font-size: 3.2rem;
-  font-family: "Life Savers", cursive;
-  background-color: #d67f91;
-  padding: 18px 0;
+.principal-navegation {
+  width: 100%;
+  background-color: #84AFA9;
+  position: fixed;
+  width: 80%;
+  height: 100%;
+  right: 100%;
+  top: 52px;
   margin: 0;
-  color: white;
-  text-align: center;
+  overflow: scroll; }
+  @media (min-width: 640px) {
+    .principal-navegation {
+      text-align: center;
+      background-size: 95%;
+      padding: 0;
+      z-index: 1000;
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 100%; } }
+  .principal-navegation a {
+    font-size: 20px;
+    font-size: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    color: #fff;
+    padding: 24px 0px 24px 15px; }
+    @media (min-width: 640px) {
+      .principal-navegation a {
+        font-size: 16px;
+        font-size: 1.6rem;
+        display: inline-block;
+        vertical-align: top;
+        border: none; } }
+
+.menu-bar {
+  background-color: #84AFA9;
+  display: block;
+  width: 19%;
+  position: fixed;
+  top: 0px; }
+  @media (min-width: 640px) {
+    .menu-bar {
+      display: none;
+      float: right; } }
+  .menu-bar img {
+    width: 20px; }
+  .menu-bar .bt-menu {
+    font-size: 12px;
+    font-size: 1.2rem;
+    display: block;
+    padding: 15px;
+    margin-left: 5px;
+    color: #fff;
+    overflow: hidden; }
+
+.container-header {
   width: 100%; }
-.container-header .container-header-redes-sociales {
-  margin-left: 13px; }
+  .container-header .container-header-logo {
+    font-size: 32px;
+    font-size: 3.2rem;
+    font-family: "Life Savers", cursive;
+    background-color: #D67F91;
+    padding: 7px 0;
+    margin: 0;
+    color: #fff;
+    width: 100%;
+    text-align: center; }
+    @media (min-width: 640px) {
+      .container-header .container-header-logo {
+        text-align: center; } }
+  .container-header .container-header-redes-sociales {
+    margin-left: 13px; }
+
+.container-articles {
+  width: 81%;
+  float: left; }
+
+.float {
+  display: inline-block;
+  vertical-align: top; }
 
 .container-artices-list-item {
   margin-top: 20px;
-  background-color: #84afa9;
+  background-color: #84AFA9;
   padding: 18px 0;
-  color: white;
+  color: #fff;
   width: 206px; }
   @media (min-width: 480px) {
     .container-artices-list-item {
@@ -254,8 +322,7 @@ a {
   @media (min-width: 1024px) {
     .container-artices-list-item {
       display: inline-block;
-      width: 267px;
-      margin-right: 51px; } }
+      width: 267px; } }
   .container-artices-list-item .container-artices-list-item-img {
     margin: 0 15px; }
     .container-artices-list-item .container-artices-list-item-img img {
@@ -283,27 +350,29 @@ a {
     font-size: 1.1rem;
     font-family: "Quicksand", sans-serif;
     background: none;
-    border: 1px solid white;
+    border: 1px solid #fff;
     padding: 5px 14px;
     margin-left: 20px;
     margin-top: -3px;
-    color: white; }
+    color: #fff; }
 
 .container-sidebar {
-  background-color: #f2f9f6;
+  background-color: #F2F9F6;
   padding: 20px 0;
   margin: 43px; }
   @media (min-width: 1024px) {
     .container-sidebar {
-      width: 20%;
-      margin: -1410px 0 0 38px;
-      float: right; } }
+      margin: 28px 0px 0 0;
+      float: right;
+      width: 19%; } }
+  .container-sidebar .container-sidebar-list {
+    padding: 0 21px; }
   .container-sidebar .container-sidebar-title {
-    background-color: #84afa9;
+    background-color: #84AFA9;
     padding: 8px 0;
     top: -20px;
     position: relative;
-    color: white;
+    color: #fff;
     text-align: center; }
     @media (min-width: 547px) {
       .container-sidebar .container-sidebar-title {
@@ -317,13 +386,12 @@ a {
         width: 168px; } }
     @media (min-width: 1024px) {
       .container-sidebar .container-sidebar-list-items {
-        display: block;
-        width: 80px; } }
+        display: block; } }
     .container-sidebar .container-sidebar-list-items .container-sidebar-list-items-subtitle {
-      font-size: 12px;
-      font-size: 1.2rem;
+      font-size: 14px;
+      font-size: 1.4rem;
       font-family: "Josefin Sans", sans-serif;
-      border-bottom: 1px solid white; }
+      color: #84AFA9; }
     .container-sidebar .container-sidebar-list-items .container-sidebar-list-items-date {
       font-size: 11px;
       font-size: 1.1rem;
@@ -331,7 +399,20 @@ a {
   .container-sidebar .container-sidebar-link {
     font-size: 12px;
     font-size: 1.2rem;
-    font-family: "Josefin Sans", sans-serif; }
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    margin-left: 23px; }
     @media (min-width: 547px) {
       .container-sidebar .container-sidebar-link {
-        margin-left: 41px; } }
+        margin-left: 25px; } }
+
+.container-footer {
+  float: left;
+  width: 100%;
+  background-color: #84AFA9;
+  padding: 20px;
+  background-size: 100%;
+  text-align: center;
+  color: #fff; }
+
+/*# sourceMappingURL=style.css.map */
